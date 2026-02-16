@@ -62,7 +62,7 @@
   --bs-black-rgb: 0, 0, 0;
 
   /* ===== Typography (Bootstrap variables used by theme) ===== */
-  --bs-font-sans-serif: 'Playfair Display', serif
+  --bs-font-sans-serif: 'Playfair Display', serif;
   --bs-font-monospace: "Playfair Display", serif;
 
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11121,19 +11121,30 @@ header.masthead h1 {
 }
 
 
-.bakery-footer {
-  background: var(--bs-gray-200);
-  color: var(--bs-dark) ;
-}
+/* =========================
+   FOOTER – Dulce Grâu
+   (brand compliant)
+========================= */
 
-.footer-logo {
-  max-width: 160px;
+.bakery-footer {
+  background-color: var(--bs-primary);   /* #1D3134 */
+  color: var(--bs-light);
+  position: relative;
 }
 
 .bakery-footer h4 {
-  color: var();
-  margin-bottom: 20px;
+  font-family: var(--bs-font-sans-serif);
+  color: var(--bs-secondary);            /* Gold Wheat */
   letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.bakery-footer p {
+  color: var(--bs-info);                 /* Light Blue */
+}
+
+.footer-logo {
+  max-width: 180px;
 }
 
 .footer-links {
@@ -11142,26 +11153,53 @@ header.masthead h1 {
 }
 
 .footer-links li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .footer-links a {
   text-decoration: none;
-  color: var(--bs-gray-600);
-  transition: 0.3s;
+  color: var(--bs-light);
+  font-weight: 500;
 }
 
 .footer-links a:hover {
-  color: var(--bs-secondary); /* gold hover */
+  color: var(--bs-secondary);
 }
-.footer p{
-  color: var(--bs-gray-400);
+
+.footer-contact i {
+  color: var(--bs-secondary);
+  margin-right: 10px;
 }
+.footer-contact p{
+  color: var(--bs-gray-200);
+}
+.social-icons i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: var(--bs-light);
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: var(--bs-secondary);   /* Tangerine */
+  transform: translateY(-3px);
+}
+
+/* Divider decorativ */
+.footer-divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--bs-secondary);
+  margin-bottom: 15px;
+}
+
+/* Bottom bar */
 .footer-bottom {
-  background-color: var(--bs-primary) !important;
-  color: var(--bs-gray-100);
-  width: 100%;
+  background-color: var(--bs-dark);      /* #1C383C */
+  color: var(--bs-info);
+  font-size: 14px;
 }
+
 
 
 #about img {
@@ -11250,6 +11288,7 @@ header.masthead h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .wheat-img {
