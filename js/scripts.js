@@ -35,12 +35,4 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
-    // SimpleLightbox (only if loaded)
-    if (typeof SimpleLightbox !== "undefined") {
-        new SimpleLightbox({
-            elements: '#portfolio a.portfolio-box'
-        });
-    }
-
 });
